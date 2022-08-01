@@ -11,3 +11,9 @@ function displayingMultiplierTables(){
   }
   return "{$str}</tr></table>";
 }
+
+function displayingColorsMultiplierTables(){
+  $search = ['1', '2', '3', '4'];
+  $replace = ['<span class="red">1</span>', '<span class="green">2</span>', '<span class="yellow">3</span>', '<span class="blue">4</span>'];
+  return str_replace($search, $replace, displayingMultiplierTables());
+}

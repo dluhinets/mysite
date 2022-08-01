@@ -1,3 +1,6 @@
+<?php
+  include_once("./module/module.php");
+?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -30,8 +33,9 @@
     </header>
     <main>
       <section class="container">
-        <div class="mt-5 mb-5">
-          <?php echo 'Hello, NIX Education' ?>
+        <div class="mt-5">
+          <h1 class="mb-3">Урок 2</h1>
+          <?php echo displayingColorsMultiplierTables(); ?>
         </div>
       </section>
     </main>
