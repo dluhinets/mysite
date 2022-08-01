@@ -2,7 +2,7 @@
   include_once("./module/module.php");
 ?>
 <!doctype html>
-<html lang="en">
+<html lang="ua">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -37,8 +37,20 @@
     <main>
       <section class="container">
         <div class="mt-5">
-          <h1 class="mb-3">Урок 2</h1>
-          <?php echo displayingColorsMultiplierTables(); ?>
+          <h1 class="mb-3">Урок 3</h1>
+          <?php
+            if (isset($_POST['inputeTextData'])){
+              print_r('<span class="fw-bold">Перевернутий рядок: </span><span class="text-decoration-underline">' . mb_strrev(htmlspecialchars($_POST['inputeTextData'])) . '</span><br><br><a class="link-primary" href="./lesson3.php">Назад</a>');
+            }else{
+              echo '          <form action="./lesson3.php" method="POST">
+                          <div class="mb-3">
+                            <label for="inputeTextData" class="form-label">Введіть рядок</label>
+                            <input type="text" name="inputeTextData" class="form-control" id="inputeTextData" placeholder="Привіт NIX Education">
+                          </div>
+                          <button type="submit" class="btn btn-primary">Надіслати</button>
+                        </form>';
+            }
+          ?>
         </div>
       </section>
     </main>

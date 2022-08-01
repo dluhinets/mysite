@@ -26,6 +26,9 @@
               <li class="nav-item">
                 <a class="nav-link" href="./lesson2.php">Урок 2</a>
               </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./lesson3.php">Урок 3</a>
+              </li>
             </ul>
           </div>
         </div>
